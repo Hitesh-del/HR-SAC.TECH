@@ -1,0 +1,128 @@
+# Task: Build HR-SAC Software Company Website
+
+## Plan
+- [x] Step 1: Initialize Supabase and setup database
+  - [x] Initialize Supabase
+  - [x] Create database schema (profiles, blog_posts, case_studies, testimonials, team_members, contact_submissions, services)
+  - [x] Setup authentication with RLS policies
+  - [x] Insert initial data
+- [x] Step 2: Update theme and design system
+  - [x] Update index.css with dark premium tech theme
+  - [x] Update tailwind.config.js with custom colors and animations
+  - [x] Change theme to black and white
+  - [x] Force dark mode globally
+  - [x] Update all color tokens to pure black/white
+- [x] Step 3: Create database API layer
+  - [x] Create types/types.ts
+  - [x] Create db/api.ts with all database functions
+- [x] Step 4: Update authentication context
+  - [x] Modify AuthContext.tsx for Google SSO and email login
+  - [x] Update RouteGuard.tsx
+- [x] Step 5: Create layout components
+  - [x] Create Header component with navigation
+  - [x] Add glass effect to header with white font
+  - [x] Change header background to black (rgba(0,0,0,0.95))
+  - [x] Add border radius to bottom left and right corners
+  - [x] Create Footer component
+  - [x] Create MainLayout component
+- [x] Step 6: Create reusable components
+  - [x] AnimatedCounter component
+  - [x] ServiceCard component
+  - [x] TestimonialCard component
+  - [x] TeamCard component
+  - [x] BlogCard component
+  - [x] CaseStudyCard component
+  - [x] Galaxy animated background component
+- [x] Step 7: Create page components
+  - [x] Home page with Galaxy background (glowIntensity: 0.1)
+  - [x] Remove floating icons from hero section
+  - [x] Make "Vision Into Reality" text white
+  - [x] Update all sections to black background
+  - [x] About page
+  - [x] Capabilities page
+  - [x] Case Studies page
+  - [x] Insights page
+  - [x] Contact page
+  - [x] Login page
+  - [x] Admin page
+- [x] Step 8: Update routing and App.tsx
+  - [x] Update routes.tsx
+  - [x] Update App.tsx with AuthProvider and RouteGuard
+  - [x] Add dark mode class enforcement
+- [x] Step 9: Search and insert images
+  - [x] Search for images
+  - [x] Replace placeholder images
+- [x] Step 10: Run lint and fix issues
+- [x] Step 11: Add animated Galaxy background to hero section
+- [x] Step 12: Change theme to black and white
+- [x] Step 13: Add glass effect to menu bar with white font
+- [x] Step 14: Fine-tune Galaxy glow intensity to 0.1
+- [x] Step 15: Update hero text to white color
+- [x] Step 16: Make overall website theme pure black with white fonts
+- [x] Step 17: Change menu bar background to black (rgba(0,0,0,0.95))
+- [x] Step 18: Add border radius to menu bar bottom corners (1rem)
+- [x] Step 19: Add Poppins font for headings and body text
+- [x] Step 20: Add gradient text styling (blue → purple → pink)
+- [x] Step 21: Update stats numbers (Projects: 25+, Clients: 34+, Team: 10+, Years: 3+)
+- [x] Step 22: Update contact information (email, phone, address)
+- [x] Step 23: Add Google Maps with Pune address
+- [x] Step 24: Create TechStack component with auto-scrolling logos
+- [x] Step 25: Add TechStack section to CapabilitiesPage
+- [x] Step 26: Remove TechStack from HomePage
+- [x] Step 27: Update HomePage stats to correct values (25+, 34+, 10+, 3+)
+- [x] Step 28: Add HR-SAC logo to navbar with gradient background
+- [x] Step 29: Add gradient text to "Meet Our Expert Team" heading
+- [x] Step 30: Make "Vision Into Reality" gradient text in hero section
+- [x] Step 31: Add Instagram and LinkedIn links to Footer
+- [x] Step 32: Replace emoji icons with real SVG technology logos in TechStack component
+- [x] Step 33: Replace gradient box logo with actual HR-SAC logo image in navbar
+- [x] Step 34: Create User Panel dropdown with welcome message and project CTA
+- [x] Step 35: Change "Start a Project" button text color to black
+
+## Notes
+- Pure black and white theme throughout the entire website
+- Background: Pure black (#000000)
+- Text: Pure white (#FFFFFF) with white/70 for secondary text
+- Typography: Poppins font family for all headings and body text (bold, large, clean)
+- Gradient text: Blue → Purple → Pink gradient for highlighted words in headings
+- Hero section: "Vision Into Reality" now has gradient text effect
+- "Meet Our Expert Team" heading has gradient text on "Expert Team"
+- Stats updated: Projects 25+, Clients 34+, Team 10+, Years 3+ (applied to both HomePage and AboutPage)
+- Contact info updated:
+  - Email: hrsacdeveloper@gmail.com
+  - Phone: +91 9421920479
+  - Address: Survey No-39, Dhayari Narhe Rd, Narhe, Pune, Maharashtra 411041
+- Google Maps integrated with Pune office location
+- Social media links in Footer:
+  - Instagram: https://www.instagram.com/hrsac.tech?igsh=b292cDNqdW5sMXNs
+  - LinkedIn: https://www.linkedin.com/company/hrsac/
+- Technology Stack section with auto-scrolling logos in CapabilitiesPage:
+  - Real SVG icons for all technologies (React, Node.js, TypeScript, Python, JavaScript, MongoDB, PostgreSQL, Docker, AWS, Git, Next.js, Vue.js)
+  - First row scrolls left to right infinitely
+  - Second row scrolls right to left infinitely
+  - Professional brand colors for each technology
+- HR-SAC logo added to navbar:
+  - Professional logo image with modern design
+  - 40x40px rounded square
+  - Positioned next to company name with proper spacing
+- User Panel dropdown menu (replaces email display):
+  - Shows "User Panel" button instead of email address
+  - Welcome message: "Welcome to HR-SAC! 👋"
+  - Displays user's email
+  - Personalized message encouraging users to start projects
+  - "Start a Project" button linking to contact page
+  - Sign Out button
+  - Available in both desktop and mobile navigation
+  - Mobile version includes welcome card with accent background
+- Added animated Galaxy background with stars in hero section (glowIntensity: 0.1 for subtle effect)
+- Header uses black background (rgba(0,0,0,0.95)) with white text and 20px backdrop blur
+- Border radius added to bottom left and right corners of header (1rem)
+- All sections have black backgrounds with white text
+- Removed floating icon decorations (Code, Smartphone, Palette)
+- Buttons use white borders with semi-transparent backgrounds
+- Dark mode forced globally via App.tsx useEffect
+- Authentication: Google SSO + Email login with OTP
+- First registered user becomes admin
+- Admin can manage user roles
+- Fixed Galaxy component WebGL Renderer initialization error with proper error handling and type safety
+- All tasks completed successfully!
